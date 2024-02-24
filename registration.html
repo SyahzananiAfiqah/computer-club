@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo"><img src ="img/complogo.png" alt="">
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="club.html">Club Info</a>
+        <a href="objective.html">Objective</a>
+        <a href="activity.html">Activity</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+</header>
+
+<div class="registration">
+  <div class="title">Registration</div>
+  <div class="content">
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your name" maxlength="49" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your username" minlength="5" maxlength="12" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="number" placeholder="Enter your number" maxlength="12" required>
+        </div>
+        <div class="input-box">
+          <span class="details">IC Number</span>
+          <input type="text" placeholder="Enter ID number" maxlength="12" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Age</span>
+          <input type="number" placeholder="Enter your age" maxlength="2" required>
+        </div>
+        <div class="input-box">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        <div class="input-box">
+          <span class="details">Class</span>
+          <div class="class">
+            <select>
+              <option value="">Select</option>
+              <option value="Dell">Dell</option>
+              <option value="Mac">Mac</option>
+              <option value="Asus">Asus</option>
+            </select>
+          </div>
+       </div> 
+        <div class="input-box">
+          <span class="details">Home Address</span>
+          <textarea rows="6" cols="35" name="address" placeholder="Enter your home address" required></textarea>
+        </div>
+       <div class="input-box">
+        <input type="checkbox" name="interest" id="inte-1">
+        <input type="checkbox" name="interest" id="inte-2">
+        <input type="checkbox" name="interest" id="inte-3">
+        <input type="checkbox" name="interest" id="inte-4">
+        <input type="checkbox" name="interest" id="inte-5">
+        <input type="checkbox" name="interest" id="inte-6">
+        <span class="interest-title">Interest</span>
+        <div class="choose">
+          <label for="inte-1">
+            <span class="inte one"></span>
+            <span class="interest">Web Designing</span>
+          </label>
+          <label for="inte-2">
+            <span class="inte two"></span>
+            <span class="interest">Software Development</span>
+          </label>
+          <label for="inte-3">
+            <span class="inte three"></span>
+            <span class="interest">Character Animation</span>
+          </label>
+          <label for="inte-4">
+            <span class="inte four"></span>
+            <span class="interest">Machine Learning</span>
+          </label>
+          <label for="inte-5">
+            <span class="inte five"></span>
+            <span class="interest">Cyber Security</span>
+          </label>
+          <label for="inte-6">
+            <span class="inte six"></span>
+            <span class="interest">AI Engineer</span>
+          </label>
+        </div>
+       </div>
+       <div class="input-box">
+        <span class="details">Password</span>
+        <input type="text" placeholder="Enter your password" minlength="5" maxlength="12" required>
+      </div>
+      </div>
+
+      <div class="regbutton">
+          <input type="reset" value="Reset">
+      <input type="button" value="Register" onclick="msg()">
+      <script>
+          function msg() {
+            alert("Register successful !");
+          }
+      </script>
+      </div>
+    </form>
+  </div>
+</div>
+
+ <section class="footer" id="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>about us</h3>
+          <p>The Computer Science Club Of The University Of Adelaide Is A Student Run Club For Those With An Interest In Computer Science Or Computing In General.</p>
+      </div>
+
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">Home</a>
+          <a href="club.html">Club Info</a>
+          <a href="objective.html">Objective</a>
+          <a href="activity.html">Activity</a>
+          <a href="registration.html">Registration</a>
+          <a href="contact.html">Contact Us</a>
+       </div>
+
+       <div class="box">
+          <h3>follow us</h3>
+          <a href="https://www.facebook.com/" target="_blank">facebook</a>
+          <a href="https://twitter.com/i/flow/login" target="_blank">twitter</a>
+          <a href="https://www.instagram.com/" target="_blank">instagram</a>
+       </div>
+
+       <div class="box">
+          <h3>contact us</h3>
+          <p> <i class="fas fa-phone"></i> 0173446652 </p>
+          <p> <i class="fas fa-envelope"></i> computerclub@gmail.com </p>
+          <p> <i class="fas fa-map-marker-alt"></i> jasin, melaka - 77300 </p>
+       </div>
+
+  </div>
+
+  <div class="credit"> created by <span> 2022 Computer Club </span> | all rights reserved </div>
+
+</section>
+
+
+</body>
+</html>
+                
